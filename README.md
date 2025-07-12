@@ -105,15 +105,6 @@ For each instance and problem type (min-sum, min-max), you will find:
 - Reproduction scripts to validate reported performance.
 
 ---
-## 📖 Citation
-
-If you use this code or data in your own research, please cite our article:
-
-> **[Nasini, Stefano, and Luis Fernando Pérez Armas]. (2025).  "Restricted Min-Norm Semi-Assignment in Group Formation: Quantum and Binary Algorithmic Integration." Available at https://dx.doi.org/10.2139/ssrn.4684889 (2024) .**
-
-https://papers.ssrn.com/sol3/Delivery.cfm/SSRN_ID4684889_code2476863.pdf?abstractid=4684889&mirid=1
-
----
 
 ## 📝 License
 This repository is released under the MIT License.
