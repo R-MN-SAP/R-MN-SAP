@@ -1,14 +1,4 @@
-/*
- *		Main.cpp
- *		Created on: 11/05/2023
- *		Author: Stefano Nasini and Luis Perez
- */
 
-
-// RUN TOY EXAMPLE: h
-// 
-// cd C:\Users\s.nasini\source\repos\CGFP_project\x64\Debug
-// run_IESEG_data_100_max_min
 
 #define _CRT_SECURE_NO_WARNINGS
 
@@ -59,22 +49,7 @@ int main(int argc, char** argv)
 
 		inst.option = 1; //CPLEX B&C
 
-		// CGFP_project Random_alpha.txt Random_beta.txt Random_theta.txt Random_x.txt 21 2 3 1 1 0 0 0 0 1 1 60 0.0 
-
-		//print_data(&inst);
-
 	}else{
-
-		//R_MN_SAP Vision_100_alpha.txt Vision_100_beta.txt Vision_100_theta.txt x_min_max_100.txt 100 2 10 1 1 0 1 1 1 1 8 600 0.0 1 0
-
-		//CGFP_project Vision_21_alpha.txt Vision_21_beta.txt Vision_21_theta.txt Vision_21_x_min_max.txt 21 2 3 1 1 0 0 0 0 2 8 600 0 0 0 
-		//CGFP_project Vision_100_alpha.txt Vision_100_beta.txt Vision_100_theta.txt Vision_100_x_min_max.txt 100 2 10 1 1 0 1 1 0 1 8 600 0 
-		//CGFP_project Vision_100_alpha.txt Vision_100_beta.txt Vision_100_theta.txt Vision_100_x_min_max_multiple_feasible_10_greedy.txt 100 2 10 1 1 0 1 1 0 1 8 600 0
-		//CGFP_project Vision_200_alpha.txt Vision_200_beta.txt Vision_200_theta.txt Vision_200_x_min_max_multiple_feasible_10_optimal.txt 200 2 20 1 1 0 1 1 0 1 8 600 0
-
-		//CGFP_project Vision_200_alpha.txt Vision_200_beta.txt Vision_200_theta.txt Vision_200_x_min_max.txt 200 2 20 1 1 0 0 0 0 2 8 600 0 1 0
-		//CGFP_project Vision_200_alpha.txt Vision_200_beta.txt Vision_200_theta.txt Vision_200_x_min_max.txt 200 2 20 1 1 0 0 0 0 4 8 600 0 1 0
-		//CGFP_project Vision_21_alpha.txt Vision_21_beta.txt Vision_21_theta.txt Vision_21_x_min_max_multiple_feasible_2_greedy.txt 21 2 3 0 0 0 1 1 1 1 8 600 0 0 0
 
 		inst.opt_bound = 60;
 		inst.output_file_data = "output_table.txt";
@@ -105,8 +80,7 @@ int main(int argc, char** argv)
 		/*Param18*/inst.warm_start = (bool)atof(argv[18]);
 		/*Param14*/inst.get_feasible = (bool)atof(argv[19]);
 
-		//inst.SA_Iter_max = 50;
-		
+	
 		inst.SA_Iter_max = inst.n_individuals * inst.n_groups;
 
 		//inst.warm_start = false;
@@ -1304,12 +1278,6 @@ int main(int argc, char** argv)
 
 	////////////////////////////////////////////////////////////////////////////////////////
 		
-	//free(inst.alpha_file_data);
-	//free(inst.beta_file_data);
-	//free(inst.theta_file_data);
-
-	//free_data(&inst);
-
 	cout << endl;
 
 	printf("\nDONE!\n\n");
